@@ -5,10 +5,10 @@ int main() {
     char caracter;
 
     // Solicitar al usuario que ingrese una letra
-    std::cout << "Ingrese una letra: " << std::endl;
+    cout << "Ingrese una letra: " << std::endl;
     
     // Leer la letra ingresada por el usuario
-    std::cin >> caracter;
+    cin >> caracter;
 
     // Convertir el caracter a minúsculas usando "tolower" es una 
     //función en C++ que se utiliza para convertir un carácter a su 
@@ -22,10 +22,10 @@ int main() {
         case 'i':
         case 'o':
         case 'u':
-            std::cout << "Es una vocal" << std::endl;
+            cout << "Es una vocal" << std::endl;
             break;
         default:
-            std::cout << "No es una vocal" << std::endl;
+            cout << "No es una vocal" << std::endl;
     }
 
     return 0;
