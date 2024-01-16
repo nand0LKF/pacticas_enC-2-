@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cctype>  // Necesario para tolower
 
 int main() {
     char caracter;
@@ -9,18 +10,18 @@ int main() {
     // Leer la letra ingresada por el usuario
     std::cin >> caracter;
 
-    // Utilizar un switch para verificar si la letra es una vocal
-    switch (caracter) {
+    // Convertir el caracter a minúsculas usando "tolower" es una 
+    //función en C++ que se utiliza para convertir un carácter a su 
+    //equivalente en minúsculas, si es una letra alfabética en mayúsculas.
+    char caracter_minuscula = std::tolower(caracter);
+
+    // Utilizar un switch para verificar si la letra (en minúsculas) es una vocal
+    switch (caracter_minuscula) {
         case 'a':
-        case 'A':
         case 'e':
-        case 'E':
         case 'i':
-        case 'I':
         case 'o':
-        case 'O':
         case 'u':
-        case 'U':
             std::cout << "Es una vocal" << std::endl;
             break;
         default:
